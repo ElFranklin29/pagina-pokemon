@@ -1,0 +1,2814 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+* {
+    box-sizing: border-box;
+}    
+   
+
+   
+    
+   .contenedor-menu { 
+        width: 95%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav {
+        background: #ffd000;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        list-style: none;
+        overflow: hidden;
+    }
+
+    header nav ul li {
+        float: left;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover {
+        background: #ffe364;
+    }
+
+    .menu-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    /*max-width:1000px;*/
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+}
+
+
+.menu-fixed ul li a{
+    padding: 1px 30px;
+}
+
+
+
+
+
+.Titulo{
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+.informacion {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    max-width: 1200px;
+    font-size: 20px;
+}
+
+.informacion img{
+    width: 1000px;
+    position: relative;
+    ;
+    
+}
+
+
+
+
+body {
+    background: #FCEEB5;
+    font-family: Abel, Arial, Verdana, sans-serif;
+    position: relative;
+    padding-bottom: 75em;
+    margin: 0;
+}
+
+footer{
+    background-color: #ffea94;
+    padding: 35em  0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 4000x;
+    border-top: #000000;
+    
+}
+
+
+.contenedor {
+    width: 1050px;
+    max-width: 1600px;
+    margin: auto;
+    
+    display: grid;
+    
+
+}
+
+
+
+
+.contenedor-cartas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+    
+}
+
+
+
+
+
+.card img {
+    max-width: 120px;
+    position:absolute;
+    left: 17px;
+    bottom: 50px;
+}
+
+
+
+
+
+.card {
+    width: 450px;
+    height: 250px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+}
+
+.card h1 {
+    text-align: center;
+}
+
+.card .additional-agua {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #2E86C1;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+
+
+.card:hover .additional-agua {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-agua .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-agua .user-card .level,
+.card .additional-agua .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-agua .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-agua .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-agua .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-agua .coords span+span {
+    float: right;
+}
+
+.card .additional-agua .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-agua .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-agua .stats i {
+    display: block;
+}
+
+.card .additional-agua .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-agua .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-agua .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+.card .additional-bicho {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #884EA0;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+
+
+.card:hover .additional-bicho {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-bicho .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-bicho .user-card .level,
+.card .additional-bicho .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-bicho .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-bicho .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-bicho .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-bicho .coords span+span {
+    float: right;
+}
+
+.card .additional-bicho .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-bicho .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-bicho .stats i {
+    display: block;
+}
+
+.card .additional-bicho .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-bicho .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-bicho .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+.card .additional-acero {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #707b7c;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+
+
+.card:hover .additional-acero {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-acero .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-acero .user-card .level,
+.card .additional-acero .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-acero .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-acero .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-acero .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-acero .coords span+span {
+    float: right;
+}
+
+.card .additional-acero .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-acero .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-acero .stats i {
+    display: block;
+}
+
+.card .additional-acero .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-acero .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-acero .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+.card .additional-dragon {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #BA4A00;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+
+
+.card:hover .additional-dragon {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-dragon .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-dragon .user-card .level,
+.card .additional-dragon .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-dragon .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-dragon .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-dragon .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-dragon .coords span+span {
+    float: right;
+}
+
+.card .additional-dragon .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-dragon .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-dragon .stats i {
+    display: block;
+}
+
+.card .additional-dragon .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-dragon .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-dragon .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+.card .additional-electrico {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #BA4;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-electrico {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-electrico .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-electrico .user-card .level,
+.card .additional-electrico .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-electrico .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-electrico .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-electrico .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-electrico .coords span+span {
+    float: right;
+}
+
+.card .additional-electrico .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-electrico .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-electrico .stats i {
+    display: block;
+}
+
+.card .additional-electrico .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-electrico .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-electrico .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+.card .additional-fantasma {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #2e4053;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-fantasma {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-fantasma .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-fantasma .user-card .level,
+.card .additional-fantasma .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-fantasma .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-fantasma .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-fantasma .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-fantasma .coords span+span {
+    float: right;
+}
+
+.card .additional-fantasma .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-fantasma .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-fantasma .stats i {
+    display: block;
+}
+
+.card .additional-fantasma .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-fantasma .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-fantasma .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+.card .additional-fuego {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #D4AC0D;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-fuego {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-fuego .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-fuego .user-card .level,
+.card .additional-fuego .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-fuego .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-fuego .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-fuego .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-fuego .coords span+span {
+    float: right;
+}
+
+.card .additional-fuego .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-fuego .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-fuego .stats i {
+    display: block;
+}
+
+.card .additional-fuego .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-fuego .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-fuego .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+.card .additional-hada {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #28b463;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-hada {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-hada .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-hada .user-card .level,
+.card .additional-hada .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-hada .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-hada .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-hada .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-hada .coords span+span {
+    float: right;
+}
+
+.card .additional-hada .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-hada .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-hada .stats i {
+    display: block;
+}
+
+.card .additional-hada .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-hada .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-hada .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+.card .additional-hielo {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #D0D3D4;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-hielo {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-hielo .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-hielo .user-card .level,
+.card .additional-hielo .user-card .points {
+    top: 15%;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-hielo .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-hielo .more-info h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-hielo .coords {
+    margin: 0 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+
+
+.card .additional-hielo .coords span+span {
+    float: right;
+}
+
+.card .additional-hielo .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.card .additional-hielo .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-hielo .stats i {
+    display: block;
+}
+
+.card .additional-hielo .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-hielo .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-hielo .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+.card .additional-lucha {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #138d75;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-lucha {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-lucha .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-lucha .user-card .level,
+.card .additional-lucha .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-lucha .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-lucha .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-lucha .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-lucha .coords span+span {
+    float: right;
+}
+
+.card .additional-lucha .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-lucha .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-lucha .stats i {
+    display: block;
+}
+
+.card .additional-lucha .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-lucha .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-lucha .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+.card .additional-normal {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #273746;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-normal {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-normal .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-normal .user-card .level,
+.card .additional-normal .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-normal .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-normal .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-normal .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-normal .coords span+span {
+    float: right;
+}
+
+.card .additional-normal .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-normal .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-normal .stats i {
+    display: block;
+}
+
+.card .additional-normal .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-normal .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-normal .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+
+.card .additional-planta {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #17a589;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-planta {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-planta .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-planta .user-card .level,
+.card .additional-planta .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-planta .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-planta .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-planta .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-planta .coords span+span {
+    float: right;
+}
+
+.card .additional-planta .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-planta .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-planta .stats i {
+    display: block;
+}
+
+.card .additional-planta .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-planta .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-planta .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+.card .additional-psiquico {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #2471a3;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-psiquico {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-psiquico .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-psiquico .user-card .level,
+.card .additional-psiquico .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-psiquico .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-psiquico .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-psiquico .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-psiquico .coords span+span {
+    float: right;
+}
+
+.card .additional-psiquico .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-psiquico .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-psiquico .stats i {
+    display: block;
+}
+
+.card .additional-psiquico .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-psiquico .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-psiquico .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+.card .additional-roca {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #ca6f1e;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-roca {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-roca .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-roca .user-card .level,
+.card .additional-roca .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-roca .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-roca .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-roca .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-roca .coords span+span {
+    float: right;
+}
+
+.card .additional-roca .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-roca .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-roca .stats i {
+    display: block;
+}
+
+.card .additional-roca .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-roca .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-roca .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+
+.card .additional-siniestro {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #839192;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-siniestro {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-siniestro .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-siniestro .user-card .level,
+.card .additional-siniestro .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-siniestro .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-siniestro .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-siniestro .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-siniestro .coords span+span {
+    float: right;
+}
+
+.card .additional-siniestro .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-siniestro .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-siniestro .stats i {
+    display: block;
+}
+
+.card .additional-siniestro .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-siniestro .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-siniestro .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+.card .additional-tierra {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #229954;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-tierra {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-tierra .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-tierra .user-card .level,
+.card .additional-tierra .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-tierra .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-tierra .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-tierra .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-tierra .coords span+span {
+    float: right;
+}
+
+.card .additional-tierra .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-tierra .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-tierra .stats i {
+    display: block;
+}
+
+.card .additional-tierra .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-tierra .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-tierra .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+
+.card .additional-veneno {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #CB4335;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-veneno {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-veneno .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-veneno .user-card .level,
+.card .additional-veneno .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-veneno .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-veneno .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-veneno .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-veneno .coords span+span {
+    float: right;
+}
+
+.card .additional-veneno .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-veneno .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-veneno .stats i {
+    display: block;
+}
+
+.card .additional-veneno .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-veneno .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-veneno .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+
+.card .additional-volador {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #7D3C98;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card:hover .additional-volador {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional-volador .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.card .additional-volador .user-card .level,
+.card .additional-volador .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+
+
+
+.card .additional-volador .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional-volador .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+.card .additional-volador .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.card .additional-volador .coords span+span {
+    float: right;
+}
+
+.card .additional-volador .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+
+
+.card .additional-volador .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional-volador .stats i {
+    display: block;
+}
+
+.card .additional-volador .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional-volador .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional-volador .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+
+
+
+.jugar{
+    position: absolute;
+    right: 1078px;
+    top:5%;
+   
+}
+
+.info{
+    position: absolute;
+        right: 1067px;
+        top: 9%;
+        font-size: 21px;
+
+}
+
+    
+    
+
+.contenedor_footer {
+    position: absolute;
+    margin: auto;
+    display: grid;
+    right: -80px;
+    top:10%;
+    
+}
+
+
+
+.cartas_footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+
+}
+
+
+.total-count {
+    position: relative;
+    font-size: 35px;
+    bottom: 30px;
+    left: 30px;
+    width: 300px;
+    height: 50px;
+    background: #a1553c;
+    border-radius: 30px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.phone {
+    position: absolute;
+    border: 8px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    height: 500px;
+    width: 500px;
+    background: #CCEFFF;
+    box-shadow: 19px 37px rbg(0, 0, 0, 0.30), 15px 12px rbg(0, 0, 0, 0.22);
+    left: 20px;
+    top:15%;
+
+}
+
+
+
+
+.layer-1 {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    background-image: url(/img/charmilion.png);
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 170px;
+
+    animation-name: charmilio;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes charmilio {
+    0% {
+        top: 80px;
+    }
+
+    25% {
+        top: -7px;
+    }
+
+    100% {
+        top: 165px;
+    }
+
+}
+
+.layer-2 {
+    position: absolute;
+    z-index: 2;
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    background-image: url(/img/pokachu.png);
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 120px;
+
+    animation-name: pikachu;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pikachu {
+    0% {
+        top: 50px;
+    }
+
+    50% {
+        top: 300px;
+    }
+
+    100% {
+        top: 55px;
+    }
+
+}
+
+.layer-3 {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: 320px;
+    background: green;
+    border-radius: 20px;
+    bottom: 0;
+
+}
+
+.layer-4 {
+    position: absolute;
+    z-index: 4;
+    height: 360px;
+    width: 80px;
+    background-image: url(/img/bolbasor.png);
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 9px;
+
+    animation-name: bolbasor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes bolbasor {
+    0% {
+        top: 90px;
+    }
+
+    25% {
+        top: 300px;
+    }
+
+    100% {
+        top: 95px;
+    }
+
+
+
+}
+
+.layer-5 {
+    position: absolute;
+    z-index: 5;
+    height: 250px;
+    width: 145px;
+    background: rgb(46, 181, 46);
+    border-radius: 20px;
+    border-bottom-left-radius: 30px;
+    bottom: 0;
+}
+
+
+.layer-6 {
+    position: absolute;
+    z-index: 6;
+    height: 230px;
+    width: 80px;
+    background-image: url(/img/squitle.png);
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 20px;
+
+    animation-name: squitle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes squitle {
+    0% {
+        top: 355px;
+    }
+
+    25% {
+        top: 5px;
+    }
+
+    100% {
+        top: 350px;
+    }
+}
+
+.layer-7 {
+    position: absolute;
+    z-index: 7;
+    right: 0;
+    width: 145px;
+    height: 200px;
+    background: rgb(48, 216, 48);
+    border-radius: 20px;
+    border-bottom-right-radius: 30px;
+    bottom: 0;
+}
+
+.layer-8 {
+    position: absolute;
+    z-index: 8;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: full;
+    height: 100px;
+    background: rgb(23, 145, 78);
+    bottom: 0;
+    border-radius: 30px;
+    color: antiquewhite;
+    text-align: center;
+
+
+}
+
+.layer-9 {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: pink;
+    border-bottom-left-radius: 30px;
+    bottom: 0;
+}
+
+.layer-10 {
+    position: absolute;
+    z-index: 10;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    width: 100px;
+    height: 70px;
+    background: rgb(105, 105, 105);
+    border-bottom-right-radius: 30px;
+    bottom: 0;
+}
+
+.zigzag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(135deg, #329634 25%, transparent 25%) -17px 0,
+        linear-gradient(-135deg, #329634 25%, transparent 25%) -17px 0,
+        linear-gradient(45deg, #19811b00 25%, #a1553c 25%),
+        linear-gradient(-45deg, #25972700 25%, #a1553c 25%);
+    background-size: 35px 35px;
+    border-radius: 20%;
+}
+
+
+
+
+input:checked {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    counter-increment: game;
+}
+
+input {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+
+
+}
+
+
+
+
+
+.total-count::after {
+    content: counter(game);
+}
+
+ul li {
+    list-style: none;
+
+}
+
+
+.score {
+    position: absolute;
+    left: 80px;
+    top:664px;
+
+}
+
+
+footer {
+    counter-reset: game;
+}
